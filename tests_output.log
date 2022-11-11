@@ -1,0 +1,82 @@
+
+==================================================
+2022-11-11 00:55:15.531540 - 
+2022-11-11 00:55:15.531540 - TEST STARTED: test_book_review_api_get_success
+2022-11-11 00:55:15.531540 - START TIME: 2022-11-11 00:55:15.5315402022-11-11 00:55:17.568006 - Executed GET request
+2022-11-11 00:55:17.568006 - URL: https://fw-qainterview-books-app.azurewebsites.net/api/book/9788418196553
+2022-11-11 00:55:17.568006 - PARAMETERS: {'accept': 'application/json'}
+2022-11-11 00:55:17.568006 - RESPONSE STATUS CODE: 2002022-11-11 00:55:17.570004 - 
+2022-11-11 00:55:17.570004 - Executed assertion:
+2022-11-11 00:55:17.570004 - EXPRESSION: Status code of https://fw-qainterview-books-app.azurewebsites.net/api/book/9788418196553 endpoint actual value [200] is equal to expected value [200]
+2022-11-11 00:55:17.570004 - RESULT: True2022-11-11 00:55:17.571996 - 
+2022-11-11 00:55:17.571996 - TEST FINISHED: test_book_review_api_get_success
+2022-11-11 00:55:17.571996 - START TIME: 2022-11-11 00:55:17.571996
+2022-11-11 00:55:17.571996 - TIME ELAPSED: 0:00:02.039458
+==================================================
+2022-11-11 00:55:17.584990 - 
+2022-11-11 00:55:17.584990 - TEST STARTED: test_book_review_api_get_failure
+2022-11-11 00:55:17.584990 - START TIME: 2022-11-11 00:55:17.5849902022-11-11 00:55:18.776184 - Executed GET request
+2022-11-11 00:55:18.776184 - URL: https://fw-qainterview-books-app.azurewebsites.net/api/book/9781776742318
+2022-11-11 00:55:18.776184 - PARAMETERS: {'accept': 'application/json'}
+2022-11-11 00:55:18.776184 - RESPONSE STATUS CODE: 4042022-11-11 00:55:18.778185 - 
+2022-11-11 00:55:18.778185 - Executed assertion:
+2022-11-11 00:55:18.778185 - EXPRESSION: Status code of https://fw-qainterview-books-app.azurewebsites.net/api/book/9781776742318 endpoint actual value [404] is equal to expected value [404]
+2022-11-11 00:55:18.778185 - RESULT: True2022-11-11 00:55:18.779184 - 
+2022-11-11 00:55:18.779184 - TEST FINISHED: test_book_review_api_get_failure
+2022-11-11 00:55:18.779184 - START TIME: 2022-11-11 00:55:18.779184
+2022-11-11 00:55:18.779184 - TIME ELAPSED: 0:00:01.193195
+==================================================
+2022-11-11 00:55:18.793211 - 
+2022-11-11 00:55:18.793211 - TEST STARTED: test_book_review_api_post_success
+2022-11-11 00:55:18.793211 - START TIME: 2022-11-11 00:55:18.7932112022-11-11 00:55:20.619222 - Executed POST request
+2022-11-11 00:55:20.619222 - URL: https://fw-qainterview-books-app.azurewebsites.net/api/book/
+2022-11-11 00:55:20.619222 - PARAMETERS: {'isbn': '9788418196554', 'title': 'Fire & Blood', 'author': 'George R. R. Martin', 'review': '93% liked this book'}
+2022-11-11 00:55:20.619222 - RESPONSE STATUS CODE: 2012022-11-11 00:55:20.621187 - 
+2022-11-11 00:55:20.621187 - Executed assertion:
+2022-11-11 00:55:20.621187 - EXPRESSION: Status code of https://fw-qainterview-books-app.azurewebsites.net/api/book/ endpoint actual value [201] is equal to expected value [201]
+2022-11-11 00:55:20.621187 - RESULT: True2022-11-11 00:55:20.624186 - 
+2022-11-11 00:55:20.624186 - TEST FINISHED: test_book_review_api_post_success
+2022-11-11 00:55:20.624186 - START TIME: 2022-11-11 00:55:20.623186
+2022-11-11 00:55:20.624186 - TIME ELAPSED: 0:00:01.827976
+==================================================
+2022-11-11 00:55:20.635189 - 
+2022-11-11 00:55:20.635189 - TEST STARTED: test_book_review_api_post_failure_1
+2022-11-11 00:55:20.635189 - START TIME: 2022-11-11 00:55:20.6351892022-11-11 00:55:21.543448 - Executed POST request
+2022-11-11 00:55:21.543448 - URL: https://fw-qainterview-books-app.azurewebsites.net/api/book/
+2022-11-11 00:55:21.543448 - PARAMETERS: {'isbn': '9788418196554', 'title': 'Fire & Blood', 'author': 'George R. R. Martin', 'review': '93% liked this book'}
+2022-11-11 00:55:21.543448 - RESPONSE STATUS CODE: 4092022-11-11 00:55:21.545411 - 
+2022-11-11 00:55:21.545411 - Executed assertion:
+2022-11-11 00:55:21.545411 - EXPRESSION: Status code of https://fw-qainterview-books-app.azurewebsites.net/api/book/ endpoint actual value [409] is equal to expected value [409]
+2022-11-11 00:55:21.545411 - RESULT: True2022-11-11 00:55:21.547411 - 
+2022-11-11 00:55:21.547411 - TEST FINISHED: test_book_review_api_post_failure_1
+2022-11-11 00:55:21.547411 - START TIME: 2022-11-11 00:55:21.547411
+2022-11-11 00:55:21.547411 - TIME ELAPSED: 0:00:00.909230
+==================================================
+2022-11-11 00:55:21.559412 - 
+2022-11-11 00:55:21.559412 - TEST STARTED: test_book_review_api_post_failure_2
+2022-11-11 00:55:21.559412 - START TIME: 2022-11-11 00:55:21.5584142022-11-11 00:55:22.769332 - Executed POST request
+2022-11-11 00:55:22.769332 - URL: https://fw-qainterview-books-app.azurewebsites.net/api/book/
+2022-11-11 00:55:22.769332 - PARAMETERS: {'isbn': '9781776742318', 'title': 'Fire and Ice', 'author': 'Robert FROST', 'review': ''}
+2022-11-11 00:55:22.769332 - RESPONSE STATUS CODE: 4002022-11-11 00:55:22.771326 - 
+2022-11-11 00:55:22.771326 - Executed assertion:
+2022-11-11 00:55:22.771326 - EXPRESSION: Status code of https://fw-qainterview-books-app.azurewebsites.net/api/book/ endpoint actual value [400] is equal to expected value [400]
+2022-11-11 00:55:22.771326 - RESULT: True2022-11-11 00:55:22.773326 - 
+2022-11-11 00:55:22.773326 - TEST FINISHED: test_book_review_api_post_failure_2
+2022-11-11 00:55:22.773326 - START TIME: 2022-11-11 00:55:22.773326
+2022-11-11 00:55:22.773326 - TIME ELAPSED: 0:00:01.212913
+==================================================
+2022-11-11 00:55:22.786317 - 
+2022-11-11 00:55:22.786317 - TEST STARTED: test_book_review_api_post_failure_3
+2022-11-11 00:55:22.786317 - START TIME: 2022-11-11 00:55:22.7853272022-11-11 00:55:24.616582 - Executed POST request
+2022-11-11 00:55:24.616582 - URL: https://fw-qainterview-books-app.azurewebsites.net/api/book/
+2022-11-11 00:55:24.616582 - PARAMETERS: {'isbn': '9781776742318', 'title': 'Dragon Books', 'author': 'Robert FROST'}
+2022-11-11 00:55:24.616582 - RESPONSE STATUS CODE: 4002022-11-11 00:55:24.618581 - 
+2022-11-11 00:55:24.618581 - Executed assertion:
+2022-11-11 00:55:24.618581 - EXPRESSION: Status code of https://fw-qainterview-books-app.azurewebsites.net/api/book/ endpoint actual value [400] is equal to expected value [400]
+2022-11-11 00:55:24.618581 - RESULT: True2022-11-11 00:55:24.620579 - 
+2022-11-11 00:55:24.620579 - Executed assertion:
+2022-11-11 00:55:24.620579 - EXPRESSION: Error string in response evaluation: {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-a11ad37b5bb8d8237ef7bd40076cdd92-ddc310b11b025366-00', 'errors': {'Review': ['The Review field is required.']}}
+2022-11-11 00:55:24.620579 - RESULT: True2022-11-11 00:55:24.621577 - 
+2022-11-11 00:55:24.621577 - TEST FINISHED: test_book_review_api_post_failure_3
+2022-11-11 00:55:24.621577 - START TIME: 2022-11-11 00:55:24.621577
+2022-11-11 00:55:24.621577 - TIME ELAPSED: 0:00:01.834260
